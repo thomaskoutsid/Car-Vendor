@@ -1,0 +1,17 @@
+{% extends 'header.html' %}
+
+{% block page_title %}
+Car Delete
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="mb-4">Car Delete</h1>
+        <form method="post" class="delete-form">
+            {% csrf_token %}
+            <p class="mb-3">Are you sure you want to delete "{{ object.manufacturer }} {{ object.model }} ({{ object.year }})"?</p>
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a href="{% url 'car_list' %}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+{% endblock %}

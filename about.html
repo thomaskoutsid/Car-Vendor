@@ -1,0 +1,130 @@
+{% extends "header.html" %}
+
+{% block page_title %}
+About CarVendor
+{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<style>
+    .team-member-img {
+        width: 200px; /* Adjust this value as needed */
+        height: 200px; /* Adjust this value as needed */
+    }
+
+    /* Center the text below the images */
+    .team-member-info {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Styling for the About section */
+    .about-section {
+        background-color: #f8f9fa; /* Light gray background */
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .about-section h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: #343a40; /* Dark gray header text color */
+    }
+
+    .about-section p {
+        font-size: 18px;
+        color: #343a40; /* Dark gray text color */
+    }
+
+    /* Styling for the Meet Our Team section */
+    .team-section {
+        background-color: #e9ecef; /* Light gray background */
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .team-section h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: #343a40; /* Dark gray header text color */
+    }
+
+    .team-member-info {
+        font-size: 20px;
+        color: #343a40; /* Dark gray text color */
+    }
+
+    .team-member-img {
+        border: 5px solid #343a40; /* Dark gray border around the images */
+    }
+
+    /* Styling for card headers */
+    .card-header {
+        background-color: #343a40; /* Dark gray card header background */
+        color: #fff; /* White card header text color */
+    }
+
+    /* Styling for card bodies */
+    .card-body {
+        color: #343a40; /* Dark gray card body text color */
+    }
+</style>
+
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        <h1 class="mb-0">About CarVendor</h1>
+    </div>
+    <div class="card-body">
+        <p>Welcome to CarVendor, your one-stop destination for buying and selling used cars!</p>
+        <p>At CarVendor, we strive to provide a seamless and hassle-free experience for both buyers and sellers. Our platform offers a wide selection of high-quality used cars from reputable sellers across the country.</p>
+        <p>For buyers, we ensure that all cars listed on our website undergo thorough inspections and come with detailed history reports, so you can make an informed decision before purchasing.</p>
+        <p>We provide insights on the used car market to help you make the best decision.</p>
+        <p>For sellers, our platform provides a user-friendly interface to list your cars and reach a large audience of potential buyers.</p>
+        <p>Whether you're looking to buy a reliable used car or sell your current vehicle, CarVendor has got you covered.</p>
+    </div>
+    <div class="card-header bg-primary text-white">
+        <h1 class="mb-0">Purpose</h1>
+    </div>
+    <div class="card-body">
+        <p>The goal of our website is to analyze the used vehicle dataset provided, which was scraped from cars.com, and address particular issues pertaining to the used automobile industry. By addressing these issues, we hope to help stakeholders in the used automobile market make well-informed decisions, to analyze the industry and develop pricing and risk-management strategies. The following objectives are addressed by the analysis:</p>
+        <ul>
+        <li>Inventory Management: Sellers can create new entries and update or delete existing entries. This will allow sellers to seamlessly update the available inventory. This feature will keep the website up to date with all the latest cars for sale.</li> 
+        <li>Search Feature: Buyers and sellers can refine their search through the dataset to find entries that fit their criteria.</li> 
+        <li>Visualizations: Visualize important trends in the used cars dataset to derive insights in various areas of interest. This will be done by analyzing factors such as the year, mileage, manufacturer, and more. Our goal is to provide a comprehensive understanding of the used car market.</li> 
+        </ul>
+
+
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-header bg-primary text-white">
+        <h2 class="mb-0">Meet Our Team</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="{% static 'member1_photo.jpg' %}" alt="Team Member 1" class="img-fluid rounded-circle team-member-img">
+                    <h4 class="team-member-info">Jayat Rateria</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="{% static 'member2_photo.jpg' %}" alt="Team Member 2" class="img-fluid rounded-circle team-member-img">
+                    <h4 class="team-member-info">Kelly Craig</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <img src="{% static 'member3_photo.jpg' %}" alt="Team Member 3" class="img-fluid rounded-circle team-member-img">
+                    <h4 class="team-member-info">Thomas Koutsidis</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
