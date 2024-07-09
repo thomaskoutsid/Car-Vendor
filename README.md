@@ -4,10 +4,11 @@
 This project was developed as part of a course at Indiana University in 2023, in collaboration with two classmates. The goal was to create a comprehensive car vendor application using Django and SQLite for the database, with the frontend and backend developed using Python and HTML/CSS. The dataset used for the database was sourced from Kaggle.
 
 Features
-Database: Built using Django and SQLite.
-Frontend: Developed with HTML and CSS.
-Backend: Powered by Python.
-Dataset: Sourced from Kaggle.
+- Database: Built using Django and SQLite.
+- Frontend: Developed with HTML and CSS.
+- Backend: Powered by Python.
+- Dataset: Sourced from Kaggle.
+
 ## To download code and run locally follow these directions:
 
 ## Setup
